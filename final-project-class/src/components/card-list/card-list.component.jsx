@@ -5,7 +5,7 @@ const CardList = ({ filteredData }) => (
     <div className='card-list'>
         {
             filteredData.map((data) => {
-                return <Card key={filteredData.id} data={data}/>;
+                return <Card key={data.id} data={data}/>;
             })
         }
     </div>
